@@ -23,7 +23,7 @@ import Practice from './componenets/page/Practice';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="loginpage" element={<LogInPage />} />
